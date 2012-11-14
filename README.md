@@ -31,13 +31,14 @@ An demo of the use of spring-social-sparklr to connect to the customised Sparklr
 
 https://github.com/michaellavelle/spring-social-sparklr-demo
 
-The SparklrConnnectionFactory must be configured using the following properties:
+The SparklrConnnectionFactory must be configured and registered with Spring Social using the following properties:
 
+```
 # spring-social-sparklr properties
 sparklr.clientId=tonr
 sparklr.clientSecret=secret
 sparklr.tokenUrl=http://localhost:8080/sparklr2/oauth/token
 sparklr.authorizeUrl=http://localhost:8080/sparklr2/oauth/authorize
 sparklr.apiBaseUrl=http://localhost:8080/sparklr2
-
+```
 
