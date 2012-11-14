@@ -15,8 +15,13 @@
  */
 package org.springframework.social.sparklr.api.impl;
 
+import java.util.List;
+
 import org.springframework.social.sparklr.api.MeOperations;
+import org.springframework.social.sparklr.api.Photo;
 import org.springframework.social.sparklr.api.SparklrProfile;
+import org.springframework.social.sparklr.api.impl.json.PhotoList;
+import org.springframework.social.sparklr.api.impl.json.PhotoResponse;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -24,25 +29,29 @@ import org.springframework.web.client.RestTemplate;
  */
 public class MeTemplate extends AbstractSparklrResourceOperations implements MeOperations {
 
-	private boolean useOauth;
-
 	public MeTemplate(String oauthApiBaseUrl, RestTemplate restTemplate,
 			boolean isAuthorizedForUser) {
 		super(oauthApiBaseUrl, restTemplate, isAuthorizedForUser);
-		this.useOauth = true;
 	}
 
 	@Override
 	public SparklrProfile getUserProfile() {
 		requireAuthorization();
 	
-		return restTemplate.getForObject(getApiResourceUrl(""),
+		return restTemplate.getForObject(getApiResourceUrl("/me"),
 					SparklrProfile.class);
 		}
 
 	@Override
 	protected String getApiResourceBaseUrl() {
-		return getApiBaseUrl() + "/me";
+		return getApiBaseUrl();
+	}
+
+	@Override
+	public List<Photo> getPhotos() {
+
+		return restTemplate.getForObject(getApiResourceUrl("/photos?format=json"),
+					PhotoResponse.class).getPhotos();
 	}
 	
 	

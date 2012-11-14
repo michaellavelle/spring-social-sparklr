@@ -15,10 +15,13 @@
  */
 package org.springframework.social.sparklr.api;
 
+import java.util.List;
+
 /**
  * @author Michael Lavelle
  */
 public interface MeOperations {
 
 	public SparklrProfile getUserProfile();
+	public List<Photo> getPhotos();
 }
