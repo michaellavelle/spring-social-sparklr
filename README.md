@@ -3,20 +3,14 @@ spring-social-sparklr
 
 Spring Social binding and connect support for the Sparklr sample application from spring-security-oauth
 
-Requires a customised version of the Sparklr application to be running on port 8080.
+Requires version 1.0.1-SNAPSHOT or later of the Sparklr application to be running on port 8080.
 
-The customised Sparklr simply adds an endpoint to the base Sparklr project which returns the currently authenticated user details to support spring social - the code is found in the spring-social-support branch of the following project:
+Running the Sparklr application
+-------------------------------
 
-https://github.com/michaellavelle/spring-security-oauth
-
-Running the customised Sparklr demo application
------------------------------------------------
-
-git clone https://github.com/michaellavelle/spring-security-oauth.git
+git clone https://github.com/SpringSource/spring-security-oauth.git
 
 cd spring-security-oauth
-
-git checkout -b spring-social-support origin/spring-social-support
 
 mvn install -P bootstrap
 
@@ -27,7 +21,7 @@ mvn tomcat:run
 Using spring-social-sparklr to connect to Sparklr
 -------------------------------------------------
 
-An demo of the use of spring-social-sparklr to connect to the customised Sparklr application can be found here:
+An demo of the use of spring-social-sparklr to connect to the Sparklr application can be found here:
 
 https://github.com/michaellavelle/spring-social-sparklr-demo
 
