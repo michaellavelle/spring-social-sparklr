@@ -39,7 +39,7 @@ public abstract class AbstractSparklrOperations {
 	
 	protected void requireAuthorization() {
 		if (!isAuthorizedForUser) {
-			throw new MissingAuthorizationException();
+			throw new MissingAuthorizationException("sparklr");
 		}
 	}
 

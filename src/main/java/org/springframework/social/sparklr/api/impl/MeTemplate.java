@@ -20,7 +20,6 @@ import java.util.List;
 import org.springframework.social.sparklr.api.MeOperations;
 import org.springframework.social.sparklr.api.Photo;
 import org.springframework.social.sparklr.api.SparklrProfile;
-import org.springframework.social.sparklr.api.impl.json.PhotoList;
 import org.springframework.social.sparklr.api.impl.json.PhotoResponse;
 import org.springframework.web.client.RestTemplate;
 

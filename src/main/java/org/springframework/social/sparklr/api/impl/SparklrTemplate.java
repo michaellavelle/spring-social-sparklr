@@ -17,7 +17,6 @@ package org.springframework.social.sparklr.api.impl;
 
 import java.util.List;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.http.converter.ByteArrayHttpMessageConverter;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.social.NotAuthorizedException;
@@ -25,6 +24,8 @@ import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 import org.springframework.social.sparklr.api.MeOperations;
 import org.springframework.social.sparklr.api.Sparklr;
 import org.springframework.social.support.ClientHttpRequestFactorySelector;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * @author Michael Lavelle
