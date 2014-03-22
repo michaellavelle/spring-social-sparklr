@@ -73,7 +73,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${org.springframework.version}</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<build>
