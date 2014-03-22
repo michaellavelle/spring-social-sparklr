@@ -20,7 +20,7 @@ mvn install -P bootstrap
 
 cd samples/oauth2/sparklr
 
-mvn tomcat7:run
+mvn tomcat:run
 
 Using spring-social-sparklr to connect to Sparklr
 -------------------------------------------------
