@@ -31,8 +31,8 @@ import org.springframework.social.sparklr.api.SparklrProfile;
 public class SparklrAdapter implements ApiAdapter<Sparklr> {
 
 	@Override
-	public UserProfile fetchUserProfile(Sparklr exFm) {
-		SparklrProfile profile = exFm.meOperations().getUserProfile();
+	public UserProfile fetchUserProfile(Sparklr sparklr) {
+		SparklrProfile profile = sparklr.meOperations().getUserProfile();
 		return new UserProfileBuilder().setName(profile.getName())
 				.setUsername(profile.getUsername()).build();
 
