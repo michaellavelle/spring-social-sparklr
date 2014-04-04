@@ -5,7 +5,11 @@ Spring Social binding and connect support for the Sparklr sample application fro
 
 Requires version 1.0.1-SNAPSHOT or later (up to 2.0.0.M2) of the Sparklr application to be running on port 8080.
 
-(Please note that support for the /me endpoint of Sparklr was removed by spring-security-oauth commit 9e408e994b1547de2f3e187899e424fd70cb98c3 prior to milestone release 2.0.0.M3.  This /me endpoint is required by the spring-social-sparklr module to provide details of authenticated user to spring social so as to allow "signin with Sparklr" )
+(Please note that support for the /me endpoint of Sparklr was removed by spring-security-oauth commit 9e408e994b1547de2f3e187899e424fd70cb98c3 prior to milestone release 2.0.0.M3.  This /me endpoint is required by the spring-social-sparklr module to provide details of authenticated user to spring social so as to allow "signin with Sparklr" 
+
+Update: 4th April 2014:  Support for the /me endpoint now added back into spring-security-oauth master 
+
+)
 
 Running the Sparklr application
 -------------------------------
