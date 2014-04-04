@@ -24,7 +24,7 @@ import org.springframework.social.sparklr.api.Sparklr;
 import org.springframework.social.sparklr.api.SparklrProfile;
 
 /**
- * ExFm ApiAdapter implementation.
+ * Sparklr ApiAdapter implementation.
  * 
  * @author Michael Lavelle
  */
